@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesus Costa Rica</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#reserva">Reserva</a></li>
+            <li><a href="#ordenar">Ordenar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+    </nav>
+
+    <div id="inicio" class="section">
+        <br><br><br><br><br>
+		<h1>Cheesus Costa Rica, somos tu mejor opción</h1>
+        <img src="../SRC/logo cheesus.png"    />
+        
+        <p>Nos enorgullece ofrecer las mejores hamburguesas artesanales, preparadas con ingredientes frescos y de la más alta calidad. Desde jugosas carnes a la parrilla hasta opciones vegetarianas y veganas, nuestra amplia variedad de hamburguesas satisface todos los gustos.</p>
+        <p>Acompañadas de deliciosas guarniciones y aderezos caseros, nuestras hamburguesas te transportarán a un mundo de sabor y satisfacción.</p>
+        <p>¡Ven y descubre por qué somos el destino preferido de los amantes de las hamburguesas! ¡Te esperamos para una experiencia gastronómica inigualable!</p>
+       
+			<h3>🍔 Si algún día nos probaste HOY somos unas Hamburguesas totalmente diferentes🍔</h3>
+    </div>
+
+
+
+    <div id="menu" class="section">
+        <h3>Nuestro menú: </h3>
+        <img src="../SRC/menu 1.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 2.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 3.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 4.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 5.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 6.jpeg" width="300" height="300"/>
+		<img src="../SRC/menu 7.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 8.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 9.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 10.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 11.jpeg" width="300" height="300"/>
+        <img src="../SRC/menu 12.jpeg" width="300" height="300"/>
+
+        <ul>
+            <li>Hamburguesas artesanales</li>
+            <li>Tacos</li>
+            <li>Quesadillas</li>
+            <li>Snacks</li>
+            <li>Bebidas</li>
+            <li>Promos semanales</li>
+        </ul>
+    </div>
+
+	 <!-- Enlace para mostrar el formulario -->
+	 <a href="#mostrar-formulario" class="mostrar-formulario">Reservar un espacio</a>
+
+	 <!-- Formulario de reserva (inicialmente oculto) -->
+	 <div id="mostrar-formulario" class="formulario">
+		 <h3>Reserva un espacio:</h3>
+		 <form action="procesar-reserva.php" method="post">
+			 <!-- Campos del formulario -->
+			 <label for="nombre">Nombre completo:</label><br>
+			 <input type="text" id="nombre" name="nombre" required><br><br>
+ 
+			 <label for="email">Correo electrónico:</label><br>
+			 <input type="email" id="email" name="email" required><br><br>
+ 
+			 <label for="telefono">Teléfono:</label><br>
+			 <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Formato: 123-456-7890" required><br><br>
+ 
+			 <label for="fecha">Fecha de reserva:</label><br>
+			 <input type="date" id="fecha" name="fecha" required><br><br>
+ 
+			 <label for="hora">Hora de reserva:</label><br>
+			 <input type="time" id="hora" name="hora" required><br><br>
+ 
+			 <label for="cantidad_personas">Cantidad de personas:</label><br>
+			 <input type="number" id="cantidad_personas" name="cantidad_personas" min="1" max="10" required><br><br>
+ 
+			 <label for="comentarios">Comentarios adicionales:</label><br>
+			 <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+ 
+			 <input type="submit" value="Enviar reserva">
+		 </form>
+	 </div>
+
+    <div id="ordenar" class="section">
+        <h4>Contamos con dos maneras de ordenar: </h4>
+        <ul>
+            <li><a href="https://www.ubereats.com/store/cheesus/E0JKninPR5KeNbzsswGvWQ" target="_blank">
+				<button>Uber Eats</button>
+			</a></li> <br>
+            <li><a href="https://api.whatsapp.com/send/?phone=50683826264&text&type=phone_number&app_absent=0" target="_blank">
+				<button>WhatsApp</button>
+			</a></li>
+        </ul>
+    </div>
+
+	<div id="nosotros" class="section">
+        <h3>Video sobre nuestro restaurante: </h3>
+        <video width="600" height="300" controls>
+            <source src="../SRC/video.mp4">
+            Tu navegador no admite el elemento de video.
+        </video>
+    </div>
+
+    <div id="contacto" class="section">
+        <h4>Nuestras redes sociales, podés seguirnos!</h4>
+        <br>
+		<ul>
+		<li><a href="https://www.instagram.com/cheesus_cr/?hl=es">
+			<button>Instagram</button>
+		</a></li><br>
+        <li><a href="https://www.facebook.com/cheesuscr/?locale=es_LA">
+			<button>FaceBook</button>
+		</a></li></ul> <br><br><br><br><br>
+    </div>
+
+    <div id="ubicacion" class="section">
+		<a href="https://www.google.com/maps/dir//de,+25+Metros+Este+en+Calle+Potrero+de+Bueyes+Heredia+San+Juan,+Santa+B%C3%A1rbara/@10.0200665,-84.2412429,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8fa0fb982c91dfa3:0xdf3e832f227ddf56!2m2!1d-84.158841!2d10.0200767?entry=ttu">
+			<button>Encuéntranos aquí</button> 
+		</a>
+       
+    </div>
+
+    <div class="container">
+        <!-- Resto de tu contenido aquí -->
+        <br><br><br><br>
+        <center>¡Será un placer atenderte!</center>
+    </div>
+</body>
+</html>
